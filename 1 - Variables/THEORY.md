@@ -1,0 +1,1 @@
+Primitive variables in programming languages are variables that are directly supported by the language and represent the most basic data types. These variables hold simple values such as numbers, characters, and boolean values. Primitive variables are generally not objects, and they don't have any properties or methods associated with them.
