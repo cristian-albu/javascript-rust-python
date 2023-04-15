@@ -14,8 +14,8 @@ Each folder will also contain a file called THEORY.md, where are the logic, theo
 ## Learning chapters:
 
 1. Variables. Data types. De Morgen
-2. Program structure
-3. Operators
+2. Operators
+3. Program structure
 4. Structures
    - Decision
    - Repetition
