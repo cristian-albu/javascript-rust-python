@@ -2,22 +2,28 @@
 
 📌**Immutable variable declaration**: The let keyword is followed by the variable name, an equal sign, and the initial value of the variable. By default, variables are immutable in Rust, which means their value cannot be changed once they are initialized.
 
+```rust
+// Immutable variable declaration
+let x = 42;
+```
+
 📌 **Mutable variable declaration**: If you want to change the value of a variable after it has been initialized, you can use the mut keyword to make it mutable. Mutable variables are declared using let mut.
 
+```rust
+// Mutable variable declaration
+let mut y = 3.14;
+```
+
 📌 **Type annotations**: Rust has a strong type system, which means that every variable must have a type. You can add a type annotation to a variable declaration by putting a colon followed by the type after the variable name.
+
+```rust
+// Type annotations can be added to specify the variable's type
+let z: bool = true;
+```
 
 📌 **Constant declaration**: Constants are values that cannot be changed throughout the entire program. They are declared using the const keyword and must be initialized with a value at the time of declaration. Constants are useful for defining values that are used frequently in your code, such as mathematical constants or configuration values.
 
 ```rust
-// Immutable variable declaration
-let x = 42;
-
-// Mutable variable declaration
-let mut y = 3.14;
-
-// Type annotations can be added to specify the variable's type
-let z: bool = true;
-
 // Constant declaration
 const MAX_POINTS: u32 = 100_000;
 ```
@@ -66,8 +72,8 @@ Floating-point numbers are real numbers that can represent fractional values. In
 let x: f32 = 3.14;
 let y: f64 = 2.718281828459045;
 
-let largest_f32 = std::f32::MAX; > 3.4028235E+38
-let largest_f64 = std::f64::MAX; > 1.7976931348623157E+308
+let largest_f32 = std::f32::MAX; > 3.4028235E+38;
+let largest_f64 = std::f64::MAX; > 1.7976931348623157E+308;
 ```
 
 ### ✅ char
