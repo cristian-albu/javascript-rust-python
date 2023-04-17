@@ -38,12 +38,8 @@ pub fn vectors(){
     println!("{:?}", string_vector_1);  //["apple", "tomato", "grapes", "oranges"]
 
     // Check if vector contains value
-
-
     println!("{} {}", string_vector_1.contains(&"apple"), string_vector_1.contains(&"bananas")) // true false
 
     
-
-
 
 }

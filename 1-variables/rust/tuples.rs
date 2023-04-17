@@ -1,4 +1,4 @@
-pub fn tubles(){
+pub fn tuples(){
     //? -------------------TUPLES-----------------------
 
     let my_tuple: (&str, i32) = ("Salary", 40_000);

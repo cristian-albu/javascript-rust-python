@@ -12,13 +12,15 @@ mod tuples;
 mod arrays;
 mod exercises;
 mod vectors;
+mod functions;
 
 fn main() {
     scalar::scalars();
     strings::strings();
-    tuples::tubles();
+    tuples::tuples();
     arrays::arrays();
     exercises::ex_function();
     vectors::vectors();
+    functions::functions();
 
 }
