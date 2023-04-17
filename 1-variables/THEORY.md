@@ -186,3 +186,112 @@ println!("The modified string is '{}'", s); // prints "The modified string is 'h
 ```
 
 Finally, we print the contents of `s` to the console, which should be the modified string "hell" since we popped off the last character "o".
+
+### ✅ Tuples
+
+A tuple is a compound data type that allows you to group together multiple values of different types into a single variable.
+
+Tuples are declared using `parentheses ()`.
+
+```rust
+let my_tuple = (1, "hello", true);
+```
+
+In this example, `my_tuple` is a tuple that contains three values: an integer with the value 1, a string with the value `"hello"`, and a boolean with the value `true`.
+
+You can access the individual values of a tuple using pattern matching or indexing. Here's an example of pattern matching:
+
+```rust
+let my_tuple = (1, "hello", true);
+
+let (x, y, z) = my_tuple;
+
+println!("x = {}, y = {}, z = {}", x, y, z);
+```
+
+In this example, the values of my_tuple are destructured into three variables `x`, `y`, and `z`. The values of `x`, `y`, and `z` are then printed to the console.
+
+Tuples can be used in a variety of contexts, such as returning multiple values from a function or representing a collection of related values.
+
+### ✅ Arrays
+
+An array is a fixed-size collection of elements of the same type, stored in contiguous memory.
+
+Arrays are declared using square brackets `[]`.
+
+```rust
+let my_array = [1, 2, 3, 4, 5];
+```
+
+In this example, `my_array` is an array that contains five integers.
+
+You can access the individual elements of an array using indexing.
+
+```rust
+let my_array = [1, 2, 3, 4, 5];
+
+let first_element = my_array[0];
+
+println!("The first element is {}", first_element);
+```
+
+In this example, the value of the first element of `my_array` is accessed using indexing and stored in the variable `first_element`. The value of `first_element` is then printed to the console.
+
+**Arrays have a fixed size**, which means that you cannot add or remove elements once the array is created. However, you can modify the values of the elements.
+
+```rust
+let mut my_array = [1, 2, 3, 4, 5];
+
+my_array[0] = 10;
+
+println!("The first element is now {}", my_array[0]);
+```
+
+In this example, the value of the first element of `my_array` is changed from `1` to `10`. The new value of the first element is then printed to the console.
+
+Arrays can be used in a variety of contexts, such as storing a fixed number of elements that are related to each other or representing a sequence of data that needs to be accessed efficiently.
+
+### ✅ Vectors
+
+A vector is a dynamic-size collection of elements of the same type, stored in contiguous memory.
+
+Vectors are declared using the `Vec` type, and elements are added using the `push` method.
+
+```rust
+let mut my_vector = Vec::new();
+
+my_vector.push(1);
+my_vector.push(2);
+my_vector.push(3);
+
+println!("The vector contains {:?}", my_vector);
+```
+
+You can access the individual elements of a vector using indexing.
+
+```rust
+let my_vector = vec![1, 2, 3];
+
+let first_element = my_vector[0];
+
+println!("The first element is {}", first_element);
+```
+
+**Vectors are dynamic**, which means that you can add or remove elements at any time.
+
+```rust
+let mut my_vector = vec![1, 2, 3];
+
+my_vector.push(4);
+
+println!("The vector now contains {:?}", my_vector);
+
+my_vector.remove(0);
+
+println!("The vector now contains {:?}", my_vector);
+
+```
+
+In this example, the value `4` is added to the end of `my_vector` using the `push` method. The contents of the vector are then printed to the console. The first element of `my_vector` is then removed using the `remove` method. The updated contents of the vector are then printed to the console.
+
+Vectors can be used in a variety of contexts, such as storing a variable number of elements that are related to each other or representing a sequence of data that needs to be modified dynamically.
