@@ -5,14 +5,14 @@
 // It has a strong focus on memory safety, with features like ownership and borrowing to prevent common programming errors like null pointer dereferences and data races.
 // Rust is often used for building low-level systems software, like operating systems, web browsers, and game engines.
 
-
+mod arrays;
+mod exercises;
+mod exercises2;
+mod functions;
 mod scalar;
 mod strings;
 mod tuples;
-mod arrays;
-mod exercises;
 mod vectors;
-mod functions;
 
 fn main() {
     scalar::scalars();
@@ -22,5 +22,5 @@ fn main() {
     exercises::ex_function();
     vectors::vectors();
     functions::functions();
-
+    exercises2::function_exercises();
 }
