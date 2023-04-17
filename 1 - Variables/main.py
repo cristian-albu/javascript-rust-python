@@ -1,8 +1,36 @@
+# Declaring variables
+# Python is a high-level programming language known for its simplicity and readability.
+# It is used for a wide range of applications, from web development to scientific computing and data analysis.
+# Python has a large and supportive community, with many libraries and tools available to make development easier.
+
+
+
+#? ---------------PRIMITIVES-----------------
+
+# Integer: Integers are whole numbers, either positive or negative, without decimals. Example: 10, -3, 0
+integer_type = 1
+
+# Float: Floats are numbers with a decimal point. Example: 3.14, -2.5, 0.0
+float_type = 1.5
+
+# In Python, you can represent a complex number using the "j" suffix to indicate the imaginary part.
+complex_type = 3 + 4j
+
+# String: Strings are a sequence of characters enclosed in quotes (single or double)
+string_type = "This is a string"
+
+# Boolean: Booleans are True or False values. Example: True, False
+boolean_type = True
+
+# NoneType: NoneType is a special type that represents the absence of a value. 
+none_type = None
+
+
 # Python complex data types
 
 # https://www.youtube.com/watch?v=W8KRzm-HUcc&list=RDCMUCCezIgC97PvUuR4_gbFUs5g&start_radio=1 more on lists, tuples, and sets
 
-# ---------------LISTS-----------------
+#? ---------------LISTS-----------------
 
 list = ["First", "Second", "Third"]
 list[0] # > "First"
@@ -26,12 +54,18 @@ list.extend(list2) # > ['BeforeFirst', 'First', 'Second', 'Third', 'Fourth', 'Ot
 
 empty_list1 = []
 
-print(list)
+# In Python, you can use the type() function to determine the type of a variable. Here's an example:
+
+x = 5
+print(type(x)) # Output: <class 'int'>
+
+y = "Hello, world!" # Output: <class 'str'>
+print(type(y)) 
 
 # Good to remember: Lists are mutable
 
 
-# ---------------TUPLES----------------
+#? ---------------TUPLES----------------
 
 # Good to remember: Tuples are not mutable
 tuple_1 = ("First", "Second", "Third")
@@ -39,7 +73,7 @@ tuple_1 = ("First", "Second", "Third")
 empty_tuple = ()
 empty_tuple2 = tuple()
 
-# ---------------SETS------------------
+#? ---------------SETS------------------
 
 # Sets are not ordered and contain only unique values
 set_1 = {"First", "Second", "Third"}
@@ -63,7 +97,7 @@ print(new_set)
 # https://www.youtube.com/watch?v=daefaLgNkw0&list=RDCMUCCezIgC97PvUuR4_gbFUs5g&index=3  more on dictionaries
 
 
-# ---------------DICTIONARIES------------------
+#? ---------------DICTIONARIES------------------
 
 dictionary = {"name": "John", "age": 25, "man": True, 15: "Key is integer"}
 
@@ -84,5 +118,3 @@ popped_phone = dictionary.pop("phone") # > popped_phone = 555-5566; dictionary =
 len(dictionary) # > 3
 
 empty_dictionary = {}
-
-print(len(dictionary))

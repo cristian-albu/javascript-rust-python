@@ -1,3 +1,51 @@
+// TypeScript is a superset of JavaScript that adds static typing and other features to the language.
+// It helps developers catch more errors earlier in the development process and makes it easier to maintain and refactor code.
+// TypeScript code is compiled into JavaScript that can run on any browser or server that supports JavaScript.
+
+// How to declare a variable in typescript.
+
+var varVar =
+  "Has function or global scope and can be reassigned and redeclared";
+let letVar = "Have block scope and cannot be redeclared. Can be reassigned";
+const constVar =
+  "Have block scope and cannot be redeclared. Can't be reassigned (for primitive values)";
+
+//? ----------------PRIMITIVES-------------------
+
+// The String object is used to represent and manipulate a sequence of characters.
+const stringType: string = "This is a string";
+
+// Number values represent floating-point numbers like 37 or -9.25.
+const numType: number = 15; // is treated as falsy for boolean operations (if it is 0 it is false for example)
+
+// The global undefined property represents the primitive value undefined.
+const undefinedType: undefined = undefined;
+
+// The null value represents the intentional absence of any object value.
+const nullType: null = null; // is treated as falsy for boolean operations
+
+// The Boolean object represents a truth value: true or false.
+const booleanType: boolean = true;
+
+// Symbol is a built-in object whose constructor returns a symbol primitive that's guaranteed to be unique.
+const symbolType: symbol = Symbol("foo"); // Symbol("foo") === Symbol("foo"); // false
+
+// BigInt values represent numeric values which are too large to be represented by the number primitive.
+const bigintType: bigint = BigInt("0x1fffffffffffff"); // 9007199254740991n
+
+// You can check the type of a variable like this:
+
+const x = 10;
+console.log(typeof x); // Output: "number"
+
+const y = "Hello";
+console.log(typeof y); // Output: "string"
+
+function add(a: number, b: number) {
+  return a + b;
+}
+console.log(typeof add); // Output: "function"
+
 //  More complex objects in javascript and typescript are objects.
 //! Objects in are stored in the heap while primitives are stored in the stack. You can't copy an object with "a = {object}, b = a". You can only make a reference to it my using that method.
 
@@ -65,6 +113,16 @@ interface ObjectInterface {
   car: "Ford" | "Mercedes"; // "|" any of the options
   house?: boolean; // "?" makes it optional
 }
+
+// You could do the same thig with a type. There are some differences but I will cover them later
+
+type ObjectInterface2 = {
+  name: string;
+  age: number;
+  male: boolean;
+  car: "Ford" | "Mercedes"; // "|" any of the options
+  house?: boolean; // "?" makes it optional
+};
 
 const newObj: ObjectInterface = {
   name: "Cristi",

@@ -3,13 +3,17 @@
 ## In this project I want to acomplish two things:
 
 - Learn the basics of computer science and web development
-- Learn `TypeScript` and `Rust`.
+- Learn `TypeScript`, `Python`, and `Rust`.
 
-Each chapter will have the same code but in different languages. No automatic conversion is allowed. Each chapter must be completed with the proper patterns for each language. At the end of this project, some databases will be used such as MongoDB and MySQL.
+Each chapter will have the same code but in different languages. No automatic conversion is allowed. Each chapter must be completed with the proper patterns for each language. At the end of this project, some databases will be used such as `MongoDB` and `MySQL`.
 
-Each folder will have a file foo.ts, foo.rs, foo.py. Install rust, then instal cargo script `cargo install cargo-script`. To see any results on each exercise or lesson, I will either console.log() while using Quokka or println!() with cargo script foo.rs.
+Each folder will have a file foo.ts, foo.rs, foo.py. Install python and rust, then instal cargo script `cargo install cargo-script`. To see any results on each exercise or lesson, I will either `console.log()` while using Quokka, `print()` with `python foo.py`, or `println!()` with `cargo script foo.rs`.
 
-Each folder will also contain a file called THEORY.md, where are the logic, theory, and tasks will be written.
+Each folder will also contain a file called `THEORY.md`, where are the logic, theory, and tasks will be written.
+
+Because I want to be a better developer, I will use WSL2 (Ubuntu-22.04) to work in. No prior experience in Linux.
+
+After completing a chapter, a "✅" will be added next to it.
 
 ## Learning chapters:
 
