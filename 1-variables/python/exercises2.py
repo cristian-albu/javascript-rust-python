@@ -1,4 +1,4 @@
-
+import math
 # TODO 1
 # Modify the program below by adding suitable functions so that it compiles correctly
 
@@ -21,6 +21,22 @@
 #     num1 * num2
 # }
 
+def ex1():
+    x = (5 + 3) * (6 + 4)
+    y = times(add_3(5), add_4(6))
+    assert x == y, "Not equal"
+    print(f"Good job {x}, {y}")
+
+def times(num1, num2):
+    return num1 * num2
+
+def add_3(num):
+    return num + 3
+
+def add_4(num):
+    return num + 4
+
+ex1()
 # TODO 2
 # Rewrite the main function in a way so that there is no variable in it and it performs the same job as this program. Your program should make calls to both the functions in this program.
 
@@ -35,6 +51,17 @@
 #     println!("Answer: {}", triple(triple(double(5))));
 # }
 
+def double(x):
+    return x * 2
+
+def triple(x):
+    return x * 3
+
+def ex2():
+    print(f"Answer: {triple(triple(double(5)))}")
+
+
+ex2()
 
 # TODO 3
 # Write a function which will accept a tuple called point representing the x-axis and y-axis coordinates of a point.
@@ -47,6 +74,10 @@
 #     (x.powf(2.0) + y.powf(2.0)).sqrt()
 # }
 
+
+def print_distance(point):
+    x, y = point
+    return math.sqrt(x**2 + y**2)
 
 # Inside the function, first destructure the tuple into (x,y).
 # This provides a better readability instead of using point.0 and point.1.
@@ -62,13 +93,15 @@
 #         "The distance of the point from the origin is {}",
 #         print_distance((5.0, 4.0))
 #     );
-
-#     
 #     Note: we need to enclose the inputs to the function in double paranthesis, i.e., print_distance((5.0,4.0)).
 #     This is becuase a single paranthesis will mean two inputs of 5.0 and 4.0 and since the function has one
 #     input which is a single tuple therefore the compiler will complain.
-#     
 # }
+
+def ex3():
+    print(f"The distance of the point from the origin is {print_distance((5, 4))}")
+
+ex3()
 
 #TODO 4 Complete the following code given below by filling in the code corresponding to the comments
 
@@ -117,6 +150,27 @@
 #     println!("The result is: {:?}", resultant_area)
 # }
 
+def area(length, width):
+    return length * width
+
+def get_prompt(prompt_text):
+    prmt = input(f"{prompt_text} ")
+    if not prmt.isdigit():
+        print("Please provide only numbers")
+        return get_prompt(prompt_text)
+    else:
+        print(prmt)
+        return int(prmt)
+
+def ex4():
+    p1 = get_prompt("Provide the length of the rectangle")
+    p2 = get_prompt("Provide the width of the rectangle")
+    print(p1, p2)
+    result = area(p1, p2)
+    print(result)
+    return result
+
+ex4()
 
 # TODO 5
 #In this exercise question, we will be writting some code that will help us cook an awesome pizza from a given cooking book.
@@ -177,6 +231,31 @@
 # }
 
 
+
+def expected_minutes_in_oven():
+    print(40)
+    return 40
+
+def remaining_minutes_in_oven(n):
+    print(40 - n)
+    return 40 - n
+
+def preparation_time_in_minutes(n):
+    print(n * 2)
+    return n * 2
+
+def elapsed_time_in_minutes(n1, n2):
+    print((n1 * 2) + n2)
+    return (n1 * 2) + n2
+
+def ex5():
+    expected_minutes_in_oven();
+    remaining_minutes_in_oven(30);
+    preparation_time_in_minutes(2)
+    elapsed_time_in_minutes(3, 20);
+
+ex5()
+
 # TODO 6
 # Consider the program below. Modify the definition of the quadruple function below by calling the
 # double function twice (this means that hte quadruple function should only make call to the double
@@ -213,3 +292,24 @@
 #         quadruple(4)
 #     );
 # }
+
+def double2(x):
+    return x * 2
+
+def quadruple(x):
+    return double2(double2(x))
+
+def ex6():
+    print(
+        f"For 1: the expected value is 4 while the output is {quadruple(1)}")
+
+    print(
+        f"For 2: the expected value is 8 while the output is {quadruple(2)}")
+
+    print(
+        f"For 3: the expected value is 12 while the output is {quadruple(3)}")
+
+    print(
+        f"For 4: the expected value is 16 while the output is {quadruple(4)}")
+
+ex6()
