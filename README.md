@@ -7,7 +7,69 @@
 
 Each chapter will have the same code but in different languages. No automatic conversion is allowed. Each chapter must be completed with the proper patterns for each language. At the end of this project, some databases will be used such as `MongoDB` and `MySQL`.
 
-Each folder will have a file foo.ts, foo.rs, foo.py. Install python and rust, then instal cargo script `cargo install cargo-script`. To see any results on each exercise or lesson, I will either `console.log()` while using Quokka, `print()` with `python foo.py`, or `println!()` with `cargo script foo.rs`.
+Each chapter will contain a folder `typescript`, `python`, and `rust`. In the typescript folder you will run
+
+### Typescript
+
+To use typescript and node:
+
+```
+npm init -y
+npm install -D typescript @types/node
+```
+
+Then you will create a `tsconfig.json` that will contain
+
+```
+{
+    "compilerOptions": {
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "target": "ES2020",
+      "sourceMap": true,
+      "outDir": "dist",
+    },
+    "include": ["src/**/*"],
+  }
+```
+
+The `.ts` files will be created inside a `src` folder. The main file will be `index.ts`.
+
+Then you will be able to run:
+
+```
+npm run build
+node dist/index.js
+```
+
+### Rust
+
+In order to use rust:
+
+```
+cargo init
+
+// Or
+
+cargo new <project_name>
+```
+
+After the project is initialized you can run:
+
+```
+rustc main.rs
+./main
+
+// Or
+
+cargo run
+```
+
+### Python
+
+To use python you will create a new file `main.py`.
+
+### THEORY
 
 Each folder will also contain a file called `THEORY.md`, where are the logic, theory, and tasks will be written.
 
@@ -17,7 +79,7 @@ After completing a chapter, a "✅" will be added next to it.
 
 ## Learning chapters:
 
-1. Variables. Data types. De Morgen
+1. Variables. Data types
 2. Operators
 3. Program structure
 4. Structures

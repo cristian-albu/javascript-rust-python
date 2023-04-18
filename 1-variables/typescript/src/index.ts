@@ -2,6 +2,8 @@
 // It helps developers catch more errors earlier in the development process and makes it easier to maintain and refactor code.
 // TypeScript code is compiled into JavaScript that can run on any browser or server that supports JavaScript.
 
+import exercises2 from "./exercises2.js";
+
 // How to declare a variable in typescript.
 
 var varVar =
@@ -187,3 +189,33 @@ mySet.delete("apple");
 // There are also WeakSets: WeakSet is designed to allow objects to be garbage collected when they are no longer used in the program. When an object that is stored in a WeakSet is no longer referenced anywhere else in the program, the WeakSet automatically removes the object from the set.
 
 let weakSet = new WeakSet();
+
+//? ---------------- FUNCTIONS ---------------------
+
+/*A function is a named block of code that performs a specific task. 
+It takes input parameters (if any), processes them, and returns an output value (if specified). 
+Functions in JavaScript are defined using the function keyword, followed by the function name, 
+a pair of parentheses (), and a block of code enclosed in curly braces {}. 
+The function body can contain statements or expressions. 
+
+
+A function is called by its name, followed by parentheses (), enclosing any required arguments. 
+ The function is executed, and the returned value (if any) can be assigned to a variable or used directly in an expression.
+
+const result = functionName(arg1, arg2, ...);
+
+
+Functions can take zero or more input parameters. 
+Input parameters are defined inside the parentheses in the function definition, followed by their data types. 
+Parameters can have default values, which are used when a value is not provided during function call.
+
+ */
+
+// Example function
+function functionName(param1: string, param2: string): boolean {
+  // Function body
+  // ...
+  return param1 === param2;
+}
+
+exercises2();

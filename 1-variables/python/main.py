@@ -118,3 +118,46 @@ popped_phone = dictionary.pop("phone") # > popped_phone = 555-5566; dictionary =
 len(dictionary) # > 3
 
 empty_dictionary = {}
+
+
+#? ---------------FUNCTIONS------------------
+
+# A function is a named block of code that performs a specific task. It takes input arguments (if any), 
+# processes them, and returns an output (if specified). Functions are defined using the def keyword, 
+# followed by the function name, a pair of parentheses (), and a colon :. The function body is indented.
+def function_name(arg1, arg2):
+    # Function body
+    # ...
+    return "result"
+
+#A function is called by its name, followed by parentheses (), enclosing any required arguments. 
+# The function is executed, and the returned value (if any) can be assigned to a variable or used directly in an expression.
+
+# result = function_name(arg1, arg2, ...)
+
+#Functions can take zero or more input arguments. 
+# Input arguments are defined inside the parentheses in the function definition. 
+# Arguments can have default values, which are used when a value is not provided during function call.
+
+def function_name(arg1, arg2="default_value"):
+    # Function body
+    # ...
+
+    return "result"
+
+
+# Functions can have a docstring, which is a string enclosed in triple quotes """ immediately after the function definition. 
+# Docstrings provide documentation about the function's purpose, usage, and parameters.
+
+def function_name(arg1, arg2):
+    """Function description.
+
+    Args:
+        arg1: Description of arg1.
+        arg2: Description of arg2.
+    
+    Returns:
+        Description of the return value.
+    """
+    # Function body
+    # ...
