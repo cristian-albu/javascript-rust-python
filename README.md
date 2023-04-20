@@ -13,33 +13,40 @@ Each chapter will contain a folder `typescript`, `python`, and `rust`. In the ty
 
 To use typescript and node:
 
+Full guide [here](https://www.section.io/engineering-education/how-to-use-typescript-with-nodejs/)
+
 ```
 npm init -y
-npm install -D typescript @types/node
+npm install -D typescript @types/node ts-node @types/express nodemon
 ```
 
 Then you will create a `tsconfig.json` that will contain
 
 ```
 {
-    "compilerOptions": {
-      "module": "NodeNext",
-      "moduleResolution": "NodeNext",
-      "target": "ES2020",
-      "sourceMap": true,
-      "outDir": "dist",
-    },
-    "include": ["src/**/*"],
-  }
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "NodeNext",
+    "target": "ES2020",
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "rootDir": "src",
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["./node_modules"]
+}
 ```
+
+Add `"dev": "nodemon ./src/index.ts"` to the `scripts` in package.json
 
 The `.ts` files will be created inside a `src` folder. The main file will be `index.ts`.
 
 Then you will be able to run:
 
 ```
-npm run build
-node dist/index.js
+npm run dev
 ```
 
 ### Rust
@@ -79,7 +86,7 @@ After completing a chapter, a "✅" will be added next to it.
 
 ## Learning chapters:
 
-1. Variables. Data types
+1. Variables. Data types ✅
 2. Operators
 3. Program structure
 4. Structures
@@ -155,3 +162,4 @@ After completing a chapter, a "✅" will be added next to it.
     - CRUD MongoDB
     - CRUD MySQL
 18. Data analysis and vizualization
+19. LeetCode
