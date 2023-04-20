@@ -158,7 +158,7 @@ After completing a chapter, a "✅" will be added next to it.
     - Rest
     - GraphQL
 16. Web scraping
-17. Databases
+17. Servers and Databases
     - CRUD MongoDB
     - CRUD MySQL
 18. Data analysis and vizualization
