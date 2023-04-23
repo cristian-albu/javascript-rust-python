@@ -145,21 +145,22 @@ After completing a chapter, a "✅" will be added next to it.
     - Creating a graph
     - Dijkstra's algorithm
 12. Strings and prefefined functions
-13. Extra
+13. Object Oriented Programming
+14. Extra
     - Simple Backtracking
     - Plan Backtracking
     - Frequency vector
     - Sequence
-14. File system
+15. File system
     - Read files
     - Write/Create files
     - Delete files
-15. APIs
+16. APIs
     - Rest
     - GraphQL
-16. Web scraping
-17. Servers and Databases
+17. Web scraping
+18. Servers and Databases
     - CRUD MongoDB
     - CRUD MySQL
-18. Data analysis and vizualization
-19. LeetCode
+19. Data analysis and vizualization
+20. LeetCode
