@@ -129,7 +129,7 @@ After completing a chapter, a "✅" will be added next to it.
      - Zones
      - Snake
    - Prop verification
-8. Sub-programs
+8. OOP
 9. Data structures
    - Lists
    - Stacks
@@ -144,23 +144,21 @@ After completing a chapter, a "✅" will be added next to it.
 11. Graphs
     - Creating a graph
     - Dijkstra's algorithm
-12. Strings and prefefined functions
-13. Object Oriented Programming
-14. Extra
+12. Extra
     - Simple Backtracking
     - Plan Backtracking
     - Frequency vector
     - Sequence
-15. File system
+13. File system
     - Read files
     - Write/Create files
     - Delete files
-16. APIs
+14. APIs
     - Rest
     - GraphQL
-17. Web scraping
-18. Servers and Databases
+15. Web scraping
+16. Servers and Databases
     - CRUD MongoDB
     - CRUD MySQL
-19. Data analysis and vizualization
-20. LeetCode
+17. Data analysis and vizualization
+18. LeetCode

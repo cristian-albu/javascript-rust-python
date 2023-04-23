@@ -191,7 +191,6 @@ function isValid(s: string): boolean {
   let square = helper(s, "[", "]");
   let squigly = helper(s, "{", "}");
 
-  console.log(round, square, squigly);
   return round && square && squigly ? true : false;
 }
 
