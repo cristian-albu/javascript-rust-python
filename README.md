@@ -136,11 +136,13 @@ After completing a chapter, a "✅" will be added next to it.
    - Queues
    - Hash table
    - Maps, sets
-10. Trees
-    - Creating a tree
-    - Inverting a binary tree
-    - Depth first search
-    - Breadth first search
+   - Trees
+     - Creating a tree
+     - Inverting a binary tree
+     - Depth first search
+     - Breadth first search
+10. Async
+    -Async/Await TS
 11. Graphs
     - Creating a graph
     - Dijkstra's algorithm
