@@ -1,4 +1,4 @@
-// ? Promises
+// ?------------------- Promises--------------
 const fetchData = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -12,14 +12,14 @@ fetchData()
   .then((data) => console.log(data))
   .catch((error) => console.log(error));
 
-// ? Async/Await
+// ?---------------- Async/Await---------------
 
 const fetchData2 = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const data = "async";
       resolve(data);
-    }, 2000);
+    }, 500);
   });
 };
 
@@ -39,16 +39,16 @@ const getData = async () => {
 
 getData();
 
-// Callback
+//?-------------- Callback--------------------
 
-const fetchData3 = (callback: any) => {
+const fetchData3 = (callback: (error: null, data: string) => void) => {
   setTimeout(() => {
     const data = "callback";
     callback(null, data);
-  }, 2000);
+  }, 1000);
 };
 
-fetchData3((error: any, data: any) => {
+fetchData3((error: null, data: string) => {
   if (error) {
     console.log(error);
   } else {
