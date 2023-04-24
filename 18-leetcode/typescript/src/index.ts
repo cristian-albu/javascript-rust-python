@@ -197,3 +197,60 @@ function isValid(s: string): boolean {
 console.log(isValid("{[]}"));
 console.log(isValid("()[]{}"));
 console.log(isValid("(]"));
+
+//? --------------21. Merge Two Sorted Lists-----------------
+// https://leetcode.com/problems/merge-two-sorted-lists/
+class ListNode {
+  val: number;
+  next: ListNode | null;
+  constructor(val: number = 0, next: ListNode | null) {
+    this.val = val;
+    this.next = next;
+  }
+}
+const mergeTwoLists = function (l1: ListNode, l2: ListNode) {
+  if (!l1) return l2;
+  else if (!l2) return l1;
+  else if (l1.val <= l2.val && l1.next) {
+    l1.next = mergeTwoLists(l1.next, l2);
+    return l1;
+  } else {
+    l2.next = mergeTwoLists(l1, l2.next!);
+    return l2;
+  }
+};
+
+// ? ----------------88. Merge Sorted Array-----------------
+//  https://leetcode.com/problems/merge-sorted-array/
+
+const merge = function (
+  nums1: number[],
+  m: number,
+  nums2: number[],
+  n: number
+): number[] {
+  for (let i = 0; i < n; i++) {
+    nums1[m + i] = nums2[i];
+  }
+
+  return nums1.sort((a, b) => a - b);
+};
+
+// ? ---------125. Valid Palindrome-----------------
+// https://leetcode.com/problems/valid-palindrome/
+
+const isPalindromeStrings = function (s: string): boolean {
+  let temp = s.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
+
+  let len = temp.length;
+  let p1 =
+    len % 2 === 0 ? temp.slice(0, len / 2) : temp.slice(0, (len - 1) / 2);
+  let p2 = len % 2 === 0 ? temp.slice(len / 2) : temp.slice((len + 1) / 2);
+
+  for (let i = 0, j = p1.length - 1; i < p1.length; i++, j--) {
+    if (p1[i] !== p2[j]) {
+      return false;
+    }
+  }
+  return true;
+};
